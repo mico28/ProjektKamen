@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::resource('kamens', 'KamenController');
 Route::get('/kamens/{kamen}/edit', 'KamenController@edit');
-//TODO popravi ker bo lepše zgledalo
+//TODO popravi ker bo lepše zgledalo al pa ne
 Route::get('/kamens/{kamen}', function ($id) {
     $kamen = DB::table('kamens')->find($id);
 
